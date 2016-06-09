@@ -1,0 +1,3 @@
+"/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/java/ti/intent/parseuri/TiIntentParseuriBootstrap.java"
+"/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/src/ti/intent/parseuri/ExampleProxy.java"
+"/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/src/ti/intent/parseuri/TiIntentParseuriModule.java"
