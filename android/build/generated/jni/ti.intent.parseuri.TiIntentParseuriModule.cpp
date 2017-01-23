@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2013 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2016 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -28,73 +28,69 @@
 
 using namespace v8;
 
-		namespace ti {
-		namespace intent {
-		namespace parseuri {
+namespace ti {
+namespace intent {
+namespace parseuri {
 
 
-Persistent<FunctionTemplate> TiIntentParseuriModule::proxyTemplate = Persistent<FunctionTemplate>();
+Persistent<FunctionTemplate> TiIntentParseuriModule::proxyTemplate;
 jclass TiIntentParseuriModule::javaClass = NULL;
 
 TiIntentParseuriModule::TiIntentParseuriModule(jobject javaObject) : titanium::Proxy(javaObject)
 {
 }
 
-void TiIntentParseuriModule::bindProxy(Handle<Object> exports)
+void TiIntentParseuriModule::bindProxy(Local<Object> exports, Local<Context> context)
 {
-	if (proxyTemplate.IsEmpty()) {
-		getProxyTemplate();
-	}
+	Isolate* isolate = context->GetIsolate();
 
-	// use symbol over string for efficiency
-	Handle<String> nameSymbol = String::NewSymbol("TiIntentParseuri");
-
-	Local<Function> proxyConstructor = proxyTemplate->GetFunction();
-	Local<Object> moduleInstance = proxyConstructor->NewInstance();
+	Local<FunctionTemplate> pt = getProxyTemplate(isolate);
+	Local<Function> proxyConstructor = pt->GetFunction(context).ToLocalChecked();
+	Local<String> nameSymbol = NEW_SYMBOL(isolate, "TiIntentParseuri"); // use symbol over string for efficiency
+	Local<Object> moduleInstance = proxyConstructor->NewInstance(context).ToLocalChecked();
 	exports->Set(nameSymbol, moduleInstance);
 }
 
-void TiIntentParseuriModule::dispose()
+void TiIntentParseuriModule::dispose(Isolate* isolate)
 {
 	LOGD(TAG, "dispose()");
 	if (!proxyTemplate.IsEmpty()) {
-		proxyTemplate.Dispose();
-		proxyTemplate = Persistent<FunctionTemplate>();
+		proxyTemplate.Reset();
 	}
 
-	titanium::KrollModule::dispose();
+	titanium::KrollModule::dispose(isolate);
 }
 
-Handle<FunctionTemplate> TiIntentParseuriModule::getProxyTemplate()
+Local<FunctionTemplate> TiIntentParseuriModule::getProxyTemplate(Isolate* isolate)
 {
 	if (!proxyTemplate.IsEmpty()) {
-		return proxyTemplate;
+		return proxyTemplate.Get(isolate);
 	}
 
 	LOGD(TAG, "GetProxyTemplate");
 
 	javaClass = titanium::JNIUtil::findClass("ti/intent/parseuri/TiIntentParseuriModule");
-	HandleScope scope;
+	EscapableHandleScope scope(isolate);
 
 	// use symbol over string for efficiency
-	Handle<String> nameSymbol = String::NewSymbol("TiIntentParseuri");
+	Local<String> nameSymbol = NEW_SYMBOL(isolate, "TiIntentParseuri");
 
-	Handle<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(
-		titanium::KrollModule::getProxyTemplate()
+	Local<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(isolate,
+		titanium::KrollModule::getProxyTemplate(isolate)
 , javaClass, nameSymbol);
 
-	proxyTemplate = Persistent<FunctionTemplate>::New(t);
-	proxyTemplate->Set(titanium::Proxy::inheritSymbol,
-		FunctionTemplate::New(titanium::Proxy::inherit<TiIntentParseuriModule>)->GetFunction());
+	proxyTemplate.Reset(isolate, t);
+	t->Set(titanium::Proxy::inheritSymbol.Get(isolate),
+		FunctionTemplate::New(isolate, titanium::Proxy::inherit<TiIntentParseuriModule>)->GetFunction());
 
-	titanium::ProxyFactory::registerProxyPair(javaClass, *proxyTemplate);
+	titanium::ProxyFactory::registerProxyPair(javaClass, *t);
 
 	// Method bindings --------------------------------------------------------
-	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "parseUri", TiIntentParseuriModule::parseUri);
-	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "example", TiIntentParseuriModule::example);
+	titanium::SetProtoMethod(isolate, t, "parseUri", TiIntentParseuriModule::parseUri);
+	titanium::SetProtoMethod(isolate, t, "example", TiIntentParseuriModule::example);
 
-	Local<ObjectTemplate> prototypeTemplate = proxyTemplate->PrototypeTemplate();
-	Local<ObjectTemplate> instanceTemplate = proxyTemplate->InstanceTemplate();
+	Local<ObjectTemplate> prototypeTemplate = t->PrototypeTemplate();
+	Local<ObjectTemplate> instanceTemplate = t->InstanceTemplate();
 
 	// Delegate indexed property get and set to the Java proxy.
 	instanceTemplate->SetIndexedPropertyHandler(titanium::Proxy::getIndexedProperty,
@@ -106,18 +102,20 @@ Handle<FunctionTemplate> TiIntentParseuriModule::getProxyTemplate()
 
 	// Accessors --------------------------------------------------------------
 
-	return proxyTemplate;
+	return scope.Escape(t);
 }
 
 // Methods --------------------------------------------------------------------
-Handle<Value> TiIntentParseuriModule::parseUri(const Arguments& args)
+void TiIntentParseuriModule::parseUri(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "parseUri()");
-	HandleScope scope;
+	Isolate* isolate = args.GetIsolate();
+	HandleScope scope(isolate);
 
 	JNIEnv *env = titanium::JNIScope::getEnv();
 	if (!env) {
-		return titanium::JSException::GetJNIEnvironmentError();
+		titanium::JSException::GetJNIEnvironmentError(isolate);
+		return;
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
@@ -125,16 +123,24 @@ Handle<Value> TiIntentParseuriModule::parseUri(const Arguments& args)
 		if (!methodID) {
 			const char *error = "Couldn't find proxy method 'parseUri' with signature '(Ljava/lang/String;)Lorg/appcelerator/kroll/KrollDict;'";
 			LOGE(TAG, error);
-				return titanium::JSException::Error(error);
+				titanium::JSException::Error(isolate, error);
+				return;
 		}
 	}
 
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+	Local<Object> holder = args.Holder();
+	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
+	if (!JavaObject::isJavaObject(holder)) {
+		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(holder);
 
 	if (args.Length() < 1) {
 		char errorStringBuffer[100];
 		sprintf(errorStringBuffer, "parseUri: Invalid number of arguments. Expected 1 but got %d", args.Length());
-		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+		titanium::JSException::Error(isolate, errorStringBuffer);
+		return;
 	}
 
 	jvalue jArguments[1];
@@ -143,11 +149,13 @@ Handle<Value> TiIntentParseuriModule::parseUri(const Arguments& args)
 
 
 	
-	
+
 	if (!args[0]->IsNull()) {
 		Local<Value> arg_0 = args[0];
 		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaString(env, arg_0);
+			titanium::TypeConverter::jsValueToJavaString(
+				isolate,
+				env, arg_0);
 	} else {
 		jArguments[0].l = NULL;
 	}
@@ -167,31 +175,34 @@ Handle<Value> TiIntentParseuriModule::parseUri(const Arguments& args)
 
 
 	if (env->ExceptionCheck()) {
-		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		Local<Value> jsException = titanium::JSException::fromJavaException(isolate);
 		env->ExceptionClear();
-		return jsException;
+		return;
 	}
 
 	if (jResult == NULL) {
-		return Null();
+		args.GetReturnValue().Set(Null(isolate));
+		return;
 	}
 
-	Handle<Value> v8Result = titanium::TypeConverter::javaObjectToJsValue(env, jResult);
+	Local<Value> v8Result = titanium::TypeConverter::javaObjectToJsValue(isolate, env, jResult);
 
 	env->DeleteLocalRef(jResult);
 
 
-	return v8Result;
+	args.GetReturnValue().Set(v8Result);
 
 }
-Handle<Value> TiIntentParseuriModule::example(const Arguments& args)
+void TiIntentParseuriModule::example(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "example()");
-	HandleScope scope;
+	Isolate* isolate = args.GetIsolate();
+	HandleScope scope(isolate);
 
 	JNIEnv *env = titanium::JNIScope::getEnv();
 	if (!env) {
-		return titanium::JSException::GetJNIEnvironmentError();
+		titanium::JSException::GetJNIEnvironmentError(isolate);
+		return;
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
@@ -199,11 +210,18 @@ Handle<Value> TiIntentParseuriModule::example(const Arguments& args)
 		if (!methodID) {
 			const char *error = "Couldn't find proxy method 'example' with signature '()Ljava/lang/String;'";
 			LOGE(TAG, error);
-				return titanium::JSException::Error(error);
+				titanium::JSException::Error(isolate, error);
+				return;
 		}
 	}
 
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+	Local<Object> holder = args.Holder();
+	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
+	if (!JavaObject::isJavaObject(holder)) {
+		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(holder);
 
 	jvalue* jArguments = 0;
 
@@ -219,27 +237,28 @@ Handle<Value> TiIntentParseuriModule::example(const Arguments& args)
 
 
 	if (env->ExceptionCheck()) {
-		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		Local<Value> jsException = titanium::JSException::fromJavaException(isolate);
 		env->ExceptionClear();
-		return jsException;
+		return;
 	}
 
 	if (jResult == NULL) {
-		return Null();
+		args.GetReturnValue().Set(Null(isolate));
+		return;
 	}
 
-	Handle<Value> v8Result = titanium::TypeConverter::javaStringToJsString(env, jResult);
+	Local<Value> v8Result = titanium::TypeConverter::javaStringToJsString(isolate, env, jResult);
 
 	env->DeleteLocalRef(jResult);
 
 
-	return v8Result;
+	args.GetReturnValue().Set(v8Result);
 
 }
 
 // Dynamic property accessors -------------------------------------------------
 
 
-		} // parseuri
-		} // intent
-		} // ti
+} // parseuri
+} // intent
+} // ti

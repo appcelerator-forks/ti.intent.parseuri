@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2013 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2016 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -11,32 +11,32 @@
 
 #include "Proxy.h"
 
-		namespace ti {
-		namespace intent {
-		namespace parseuri {
-
+namespace ti {
+namespace intent {
+namespace parseuri {
 
 class TiIntentParseuriModule : public titanium::Proxy
 {
 public:
 	explicit TiIntentParseuriModule(jobject javaObject);
 
-	static void bindProxy(v8::Handle<v8::Object> exports);
-	static v8::Handle<v8::FunctionTemplate> getProxyTemplate();
-	static void dispose();
+	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
+	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);
+	static void dispose(v8::Isolate*);
 
-	static v8::Persistent<v8::FunctionTemplate> proxyTemplate;
 	static jclass javaClass;
 
 private:
+	static v8::Persistent<v8::FunctionTemplate> proxyTemplate;
+
 	// Methods -----------------------------------------------------------
-	static v8::Handle<v8::Value> parseUri(const v8::Arguments&);
-	static v8::Handle<v8::Value> example(const v8::Arguments&);
+	static void parseUri(const v8::FunctionCallbackInfo<v8::Value>&);
+	static void example(const v8::FunctionCallbackInfo<v8::Value>&);
 
 	// Dynamic property accessors ----------------------------------------
 
 };
 
-		} // parseuri
-		} // intent
-		} // ti
+} // parseuri
+} // intent
+} // ti

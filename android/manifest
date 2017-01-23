@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
-apiversion: 2
-architectures: armeabi armeabi-v7a x86
+version: 2.0.0
+apiversion: 3
+architectures: armeabi-v7a x86
 description: ti.intent.parseuri
 author: Your Name
 license: Specify your license
@@ -15,4 +15,4 @@ name: ti.intent.parseuri
 moduleid: ti.intent.parseuri
 guid: 0d28abae-790d-4911-b9ad-4c31fa2391fb
 platform: android
-minsdk: 5.2.0.GA
+minsdk: 6.0.0.GA

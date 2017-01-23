@@ -6,13 +6,13 @@
 #include <v8.h>
 #include <KrollBindings.h>
 
-#include "ti.intent.parseuri.ExampleProxy.h"
 #include "ti.intent.parseuri.TiIntentParseuriModule.h"
+#include "ti.intent.parseuri.ExampleProxy.h"
 
 
 %}
 struct titanium::bindings::BindEntry;
 %%
-ti.intent.parseuri.TiIntentParseuriModule,::ti::intent::parseuri::TiIntentParseuriModule::bindProxy,::ti::intent::parseuri::TiIntentParseuriModule::dispose
 ti.intent.parseuri.ExampleProxy,::ti::intent::parseuri::tiintentparseuri::ExampleProxy::bindProxy,::ti::intent::parseuri::tiintentparseuri::ExampleProxy::dispose
+ti.intent.parseuri.TiIntentParseuriModule,::ti::intent::parseuri::TiIntentParseuriModule::bindProxy,::ti::intent::parseuri::TiIntentParseuriModule::dispose
 %%

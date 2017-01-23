@@ -1,19 +1,19 @@
 /* C++ code produced by gperf version 3.0.3 */
-/* Command-line: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/gperf -L C++ -E -t /Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf  */
+/* Command-line: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/gperf -L C++ -E -t /Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf  */
 /* Computed positions: -k'' */
 
-#line 3 "/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
+#line 3 "/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
 
 
 #include <string.h>
 #include <v8.h>
 #include <KrollBindings.h>
 
-#include "ti.intent.parseuri.ExampleProxy.h"
 #include "ti.intent.parseuri.TiIntentParseuriModule.h"
+#include "ti.intent.parseuri.ExampleProxy.h"
 
 
-#line 14 "/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
+#line 14 "/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
 struct titanium::bindings::BindEntry;
 /* maximum key range = 11, duplicates = 0 */
 
@@ -50,10 +50,10 @@ TiIntentParseuriBindings::lookupGeneratedInit (register const char *str, registe
       {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
       {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
       {""}, {""}, {""}, {""},
-#line 17 "/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
+#line 16 "/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
       {"ti.intent.parseuri.ExampleProxy",::ti::intent::parseuri::tiintentparseuri::ExampleProxy::bindProxy,::ti::intent::parseuri::tiintentparseuri::ExampleProxy::dispose},
       {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-#line 16 "/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
+#line 17 "/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
       {"ti.intent.parseuri.TiIntentParseuriModule",::ti::intent::parseuri::TiIntentParseuriModule::bindProxy,::ti::intent::parseuri::TiIntentParseuriModule::dispose}
     };
 
@@ -71,5 +71,5 @@ TiIntentParseuriBindings::lookupGeneratedInit (register const char *str, registe
     }
   return 0;
 }
-#line 18 "/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
+#line 18 "/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/KrollGeneratedBindings.gperf"
 

@@ -1,188 +1,263 @@
-/Users/yomybaby/Documents/TiWorkspace/ti.intent.parseuri/android/build/generated/obj/local/x86/objs/ti.intent.parseuri/ti.intent.parseuri.ExampleProxy.o: \
+/Users/yomybaby/Documents/TiWorkspace/_tools/_mytools/ti.intent.parseuri/android/build/generated/obj/local/x86/objs/ti.intent.parseuri/ti.intent.parseuri.ExampleProxy.o: \
  jni/ti.intent.parseuri.ExampleProxy.cpp \
  jni/ti.intent.parseuri.ExampleProxy.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/jni.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/android/api-level.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdarg.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/features.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/user_config.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/compat.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/host.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_system.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_android.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/Proxy.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/v8.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/v8stdint.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stddef.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdio.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/stdio.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/stdint.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/_types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/_types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/posix_types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/stddef.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/compiler.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/types.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/kernel.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JavaObject.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/assert.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/assert.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/EventEmitter.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/NativeObject.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/AndroidUtil.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/android/log.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdlib.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/stdlib.h \
- /Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/string.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/string.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/malloc.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/alloca.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/strings.h \
- /Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/memory.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/EventEmitter.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JNIUtil.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/AndroidUtil.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JSException.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/ProxyFactory.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/TypeConverter.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/V8Util.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/org.appcelerator.titanium.proxy.TiViewProxy.h \
- /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/Proxy.h
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/jni.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/api-level.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/Proxy.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdint.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/_types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/limits.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/limits.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/limits.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/internal_types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/limits.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/syslimits.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page_32.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdio.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/posix_types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/stddef.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/compiler.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/types.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/kernel.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/string.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/malloc.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/new \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/assert.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8-version.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8config.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JavaObject.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/EventEmitter.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/NativeObject.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/AndroidUtil.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/log.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdlib.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/alloca.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/strings.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/memory.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/EventEmitter.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JNIUtil.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/AndroidUtil.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JSException.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/ProxyFactory.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/TypeConverter.h \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/map \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
+ /Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/V8Util.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/org.appcelerator.titanium.proxy.TiViewProxy.h \
+ /Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/Proxy.h
 
 jni/ti.intent.parseuri.ExampleProxy.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/jni.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/jni.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/android/api-level.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/api-level.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdarg.h:
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/Proxy.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_cprolog.h:
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/features.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdint.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/user_config.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_types.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/compat.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/_types.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/host.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/limits.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_system.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/limits.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_android.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/limits.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/internal_types.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/limits.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/syslimits.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_epilog.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page_32.h:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/Proxy.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/v8.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdio.h:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/v8stdint.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/types.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stddef.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/posix_types.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdio.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/stddef.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/stdio.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/compiler.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/stdint.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/_types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/types.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/_types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/types.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/posix_types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/kernel.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/stddef.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/compiler.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/types.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/kernel.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JavaObject.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/assert.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/assert.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/EventEmitter.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/NativeObject.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/AndroidUtil.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/android/log.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/stdlib.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/string.h:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/stdlib.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/malloc.h:
 
-/Users/yomybaby/Library/Android/ndk/sources/cxx-stl/stlport/stlport/string.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/../include/string.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/malloc.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/alloca.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/strings.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/new:
 
-/Users/yomybaby/Library/Android/ndk/platforms/android-9/arch-x86/usr/include/memory.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/EventEmitter.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JNIUtil.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/AndroidUtil.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/JSException.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/ProxyFactory.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/TypeConverter.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/assert.h:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/V8Util.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/org.appcelerator.titanium.proxy.TiViewProxy.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
 
-/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/5.3.0.GA/android/native/include/Proxy.h:
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8-version.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/v8config.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JavaObject.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/EventEmitter.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/NativeObject.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/AndroidUtil.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/log.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdlib.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/alloca.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/strings.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/memory.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/EventEmitter.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JNIUtil.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/AndroidUtil.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/JSException.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/ProxyFactory.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/TypeConverter.h:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/map:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
+
+/Users/yomybaby/Library/Android/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/V8Util.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/org.appcelerator.titanium.proxy.TiViewProxy.h:
+
+/Users/yomybaby/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.1.GA/android/native/include/Proxy.h:
